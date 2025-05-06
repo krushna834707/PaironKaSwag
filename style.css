@@ -1,0 +1,144 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder {
+    color: lightgray;
+}
+
+.limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider {
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20230416/pngtree-background-wall-gray-black-bricks-image_2408221.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 0.5s ease;
+
+}
+
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.sliderImg {
+    z-index: -1;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+    border: 1px solid gray;
+    text-align: center;
+    z-index: 1;
+
+}
+
+
+.buyButton {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    border: 1px solid gray;
+    background-color: black;
+    cursor: pointer;
+    z-index: 1;
+
+
+}
+
+.buyButton:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.sliderItem:nth-child(1) .sliderPrice {
+    background-color: rgb(166, 187, 187);
+}
+
+.sliderItem:nth-child(2) .sliderPrice {
+    background-color: rgb(24, 8, 52);
+}
+
+.sliderItem:nth-child(3) .sliderPrice {
+    background-color: rgb(255, 0, 191);
+}
+
+.sliderItem:nth-child(4) .sliderPrice {
+    background-color: rgb(43, 41, 15);
+}
+
+.sliderItem:nth-child(5) .sliderPrice {
+    background-color: rgb(206, 255, 255);
+}
